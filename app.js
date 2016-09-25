@@ -1,6 +1,12 @@
 $(document).ready(function() {
 	// body...
-	for (var i = 1; i < 101; i++) {
+	var choice = prompt("pick a number from 1 to 100...");
+		 
+	var limit = parseInt(choice,10);
+		
+
+
+	for (var i = 1; i < limit+1; i++) {
 		if(i % 3 == 0 && i % 5 == 0){
 			console.log("Bang!");
   			$('body').append("<p>Bang!</p>");
@@ -15,5 +21,4 @@ $(document).ready(function() {
   			$('body').append("<p>"+i+"</p>");
   		};
   	};
-  	// $('div').append('div').text(i);
 });
